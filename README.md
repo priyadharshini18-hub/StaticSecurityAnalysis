@@ -66,28 +66,15 @@ Severity breakdown:
 └── httpie/                              # Sample repository
 ```
 
-# 🛡️ StaticSecurityAnalysis
-**Static Security Analysis of Open Source Projects using Bandit and Semgrep**
-
 ---
 
-## 📘 Overview  
-This project automates **static security analysis** for open-source Python repositories using two key tools:  
+## Semgrep Security Analysis
 
-- **Bandit** – Detects common security issues in Python code such as hardcoded passwords, unsafe subprocess calls, and injection risks.  
-- **Semgrep** – Performs rule-based static analysis across multiple languages to identify code quality issues, dependency risks, and configuration vulnerabilities in YAML, Docker, and CI/CD files.  
+Automated static analysis using **Semgrep**, a multi-language static analysis tool that detects security flaws, code quality issues, and dependency risks using customizable, rule-based scanning.
 
-Together, these tools enable both **broad coverage** and **fine-grained rule-based scanning** for open-source projects.
+Semgrep identifies problems such as unsafe command execution, privilege escalation, insecure HTTP or SSL usage, and vulnerable configurations across code, YAML, and Docker files.
 
----
-
-## ⚙️ Installation  
+### 1. Run Semgrep Analysis
 
 ```bash
-# Clone and navigate to the project
-git clone https://github.com/priyadharshini18-hub/StaticSecurityAnalysis.git
-cd StaticSecurityAnalysis
-
-# Install dependencies
-pip install -r requirements.txt
-
+python run_semgrep_analysis_py.py
