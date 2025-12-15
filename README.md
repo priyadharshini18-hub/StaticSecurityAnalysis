@@ -79,6 +79,8 @@ Semgrep identifies problems such as unsafe command execution, privilege escalati
 ```bash
 python run_semgrep_analysis_py.py
 
+```
+
 ## Pylint Security Analysis
 
 Automated static analysis using Pylint, a Python static analysis tool that inspects source code to detect programming errors, code smells, style violations, and potential bugs based on configurable coding standards.
@@ -88,3 +90,5 @@ Pylint identifies issues such as unused variables and imports, incorrect method 
 ### 1. Run Pylint Analysis
 ```bash
 pylint . --disable=all --enable=security
+
+```
